@@ -92,4 +92,4 @@ kernel.
 - [ ] Google Drive Link Submitted
 ## Author
  
-**Caleb Djarabé** — Data Science Intern, AnalystLab Africa
+**Caleb Djarabé** — Data Science Intern, [AnalystLab Africa](https://www.linkedin.com/company/analystlab-africa/posts/?feedView=all)
