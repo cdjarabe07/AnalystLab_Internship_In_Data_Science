@@ -1,0 +1,21 @@
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Large data (optional, uncomment if you don't want to version the raw CSV)
+# data/raw/*.csv
