@@ -88,7 +88,7 @@ kernel.
 - [x] Reflection Report
 - [x] GitHub Repository (this repo)
 - [x] LinkedIn Post
-- [ ] X Post
+- [x] X Post
 - [ ] Google Drive Link Submitted
 ## Author
  
