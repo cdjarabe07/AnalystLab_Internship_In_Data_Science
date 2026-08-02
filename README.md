@@ -86,8 +86,8 @@ kernel.
 - [x] Dataset Inspection Report
 - [x] Jupyter Notebook (EDA + visualisations)
 - [x] Reflection Report
-- [ ] GitHub Repository (this repo)
-- [ ] LinkedIn Post
+- [x] GitHub Repository (this repo)
+- [x] LinkedIn Post
 - [ ] X Post
 - [ ] Google Drive Link Submitted
 ## Author
