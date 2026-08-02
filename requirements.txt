@@ -5,6 +5,3 @@ seaborn
 jupyter
 notebook
 openpyxl
-plotly
-kaleido
-px
