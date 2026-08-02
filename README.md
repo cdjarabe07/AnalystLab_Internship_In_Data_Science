@@ -84,8 +84,8 @@ kernel.
  
 - [x] Business Understanding Report
 - [x] Dataset Inspection Report
-- [x] Jupyter Notebook (EDA + visualisations)
 - [x] Reflection Report
+- [x] Jupyter Notebook (EDA + visualisations)
 - [x] GitHub Repository (this repo)
 - [x] LinkedIn Post
 - [x] X Post
