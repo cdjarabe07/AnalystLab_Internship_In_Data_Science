@@ -90,7 +90,7 @@ kernel.
 - [x] Jupyter Notebook (EDA + visualisations)
 - [x] Reflection Report
 - [x] GitHub Repository (this repo)
-- [ ] LinkedIn Post
+- [x] LinkedIn Post
 - [ ] X Post
 - [ ] Google Drive Link Submitted
 
