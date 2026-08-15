@@ -89,11 +89,11 @@ kernel.
 - [x] Dataset Inspection Report
 - [x] Jupyter Notebook (EDA + visualisations)
 - [x] Reflection Report
-- [ ] GitHub Repository (this repo)
+- [x] GitHub Repository (this repo)
 - [ ] LinkedIn Post
 - [ ] X Post
 - [ ] Google Drive Link Submitted
 
 ## Author
 
-**Caleb** — Data Science Intern, AnalystLab Africa
+**Caleb Djarabé** — Data Science Intern, AnalystLab Africa
