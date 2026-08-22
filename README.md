@@ -33,14 +33,6 @@ inspection, and exploratory data analysis.
 
 ## Key Findings
 
-| Attrition by Department | Attrition by OverTime |
-|---|---|
-| ![Attrition by Department](visuals/attrition_by_department.png) | ![Attrition by OverTime](visuals/attrition_by_overtime.png) |
-
-| Monthly Income by Attrition | Overall Attrition Rate |
-|---|---|
-| ![Income boxplot](visuals/boxplot_income_attrition.png) | ![Attrition pie chart](visuals/attrition_pie.png) |
-
 - Employees who work **overtime** leave at a substantially higher rate than those who don't.
 - **Monthly income** is noticeably lower among employees who left.
 - **Younger employees** show higher attrition than older, more tenured staff.
