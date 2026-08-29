@@ -1,19 +1,8 @@
-# Employee Attrition Analysis – ABC Manufacturing Ltd
+# AnalystLab Africa – Data Science Internship
 
-**Data Science Internship Programme – AnalystLab Africa**
-Week 1: Business Understanding & Data Exploration
-
-![Python](https://img.shields.io/badge/Python-3.13-blue)
-![Pandas](https://img.shields.io/badge/Pandas-EDA-informational)
-![Status](https://img.shields.io/badge/Status-Week%201%20Complete-success)
-
-## Overview
-
-This project simulates a consulting engagement for **ABC Manufacturing Ltd**, which wants to
-understand the drivers of employee attrition before investing in predictive machine learning
-models. Using the IBM HR Analytics dataset (1,470 employees, 35 variables) as a stand-in for the
-company's real HR data, this Week 1 deliverable focuses on business understanding, data
-inspection, and exploratory data analysis.
+This repo holds my weekly work for the AnalystLab Africa Data Science Internship — one dataset
+(Loan Prediction, after Week 1's separate HR attrition project), carried forward and built on
+week by week rather than restarted each time.
 
 ## Dataset
 
@@ -32,6 +21,14 @@ inspection, and exploratory data analysis.
 7. Which variables appear important for future predictive modelling?
 
 ## Key Findings
+
+| Attrition by Department | Attrition by OverTime |
+|---|---|
+| ![Attrition by Department](visuals/attrition_by_department.png) | ![Attrition by OverTime](visuals/attrition_by_overtime.png) |
+
+| Monthly Income by Attrition | Overall Attrition Rate |
+|---|---|
+| ![Income boxplot](visuals/boxplot_income_attrition.png) | ![Attrition pie chart](visuals/attrition_pie.png) |
 
 - Employees who work **overtime** leave at a substantially higher rate than those who don't.
 - **Monthly income** is noticeably lower among employees who left.
@@ -72,20 +69,9 @@ venv\Scripts\Activate.ps1      # Windows
 pip install -r requirements.txt
 ```
 
-Then open `notebooks/01_week1_exploration.ipynb` in VS Code or Jupyter and select the `venv`
+Each week's notebook lives under its own folder — open the relevant one and select the `venv`
 kernel.
-
-## Deliverables
-
-- [x] Business Understanding Report
-- [x] Dataset Inspection Report
-- [x] Jupyter Notebook (EDA + visualisations)
-- [x] Reflection Report
-- [x] GitHub Repository (this repo)
-- [x] LinkedIn Post
-- [x] X Post
-- [x] Google Drive Link Submitted
 
 ## Author
 
-**Caleb Djarabé** — Data Science Intern, AnalystLab Africa
+Caleb Djarabé — Data Science Intern, [AnalystLab Africa](https://www.linkedin.com/company/analystlab-africa/posts/?feedView=all)
