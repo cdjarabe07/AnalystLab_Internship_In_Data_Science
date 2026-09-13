@@ -1,31 +1,33 @@
-# Semaine 6 – Amélioration du modèle, analyse d'erreurs et validation
+# Week 6 – Model Improvement, Error Analysis & Validation
 
-Diagnostic des faiblesses du modèle de référence de la semaine 5, ingénierie d'une nouvelle
-caractéristique et comparaison de modèles candidats, en s'appuyant sur le modèle de base de la
-semaine 5.
+Diagnosed the weaknesses of the Week 5 baseline, engineered a new feature based on that
+diagnosis, and compared candidate models — building on the Week 5 baseline model.
 
-## Ce qui a été fait
+## What was done
 
-- Reproduit et vérifié le modèle de référence de la semaine 5 (ROC-AUC 0,677, précision 0,627)
-- Analysé la matrice de confusion : 166 absences manquées et 194 fausses alertes sur 966 cas de test
-- Identifié que le modèle repose surtout sur `booking_lead_days` : les absences correctement
-  détectées ont un délai de réservation moyen de ~44 jours, contre ~19 jours pour celles manquées
-- Conçu une nouvelle caractéristique d'interaction `leaddays_x_prevrate` (délai × taux d'absences
-  passées) pour mieux capturer ce signal
-- Entraîné et comparé trois modèles candidats (régression logistique + interaction, Random Forest,
-  Gradient Boosting) sur le même découpage par patient que la semaine 5
-- Contacté la track Data Analytics (DA) pour obtenir des insights complémentaires par segment
-  (en attente de réponse)
+- Reproduced and verified the Week 5 baseline (ROC-AUC 0.677, accuracy 0.627)
+- Ran error analysis on the confusion matrix: 166 missed no-shows and 194 false alarms out of 966
+  test cases
+- Found the baseline over-relies on `booking_lead_days`: correctly-caught no-shows average ~44
+  days lead time vs. only ~19 days for missed ones
+- Engineered `leaddays_x_prevrate` (lead time × prior no-show rate) to capture that interaction
+- Trained and compared three candidates (logistic regression + interaction, Random Forest,
+  Gradient Boosting) on the same patient-level split
+- Reached out to the Data Analytics track for cross-track input; no response by the deadline, so
+  ran a DA-style segment analysis independently (distance, day, time, appointment type)
+- Found reminders lose most of their effect for the farthest patients (-10 points no-show for
+  mid-distance patients vs. only -2 points for the farthest) — tested as a model feature
+  (`far_and_reminded`), which didn't improve the metric but stands as an operational insight
 
-## Résultat
+## Result
 
-Le **Random Forest** est le meilleur candidat : ROC-AUC 0,687, précision 0,636 — une amélioration
-réelle mais modeste par rapport à la référence. `booking_lead_days` et la nouvelle interaction
-`leaddays_x_prevrate` restent les prédicteurs les plus importants ; `distance_to_clinic_km` ressort
-aussi de façon inattendue et reste à approfondir.
+**Random Forest** is the best candidate: ROC-AUC 0.686, accuracy 0.636 — a real but modest
+improvement over the baseline. `booking_lead_days` and `leaddays_x_prevrate` remain the strongest
+predictors; `distance_to_clinic_km` also ranks high, explained in part by the reminder-effectiveness
+finding above.
 
-## Fichiers
+## Files
 
 - `notebooks/week6_model_improvement_validation.ipynb`
-- `reports/week6_project_summary.docx` *(à préparer)*
+- `reports/week6_project_summary.docx`
 - `visuals/`
